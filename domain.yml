@@ -1,0 +1,55 @@
+version: "2.0"
+
+# Added some
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - question_if_restaurant_open
+  - list_menu_items
+  - order_food
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# Custom
+
+entities:
+- hour
+- day
+- full_order
+
+slots:
+  full_order:
+    type: text
+    influence_conversation: false
+    
+actions:
+- action_tell_me_if_open
+- action_share_menu_list
+- action_order_food

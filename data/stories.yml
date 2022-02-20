@@ -1,0 +1,58 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# My custom stories
+- story: Check if open
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: question_if_restaurant_open
+  - action: action_tell_me_if_open
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Share menu list
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: list_menu_items
+  - action: action_share_menu_list
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Order food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_food
+  - action: action_order_food
+  - intent: goodbye
+  - action: utter_goodbye

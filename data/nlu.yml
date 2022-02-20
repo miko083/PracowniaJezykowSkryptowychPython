@@ -1,0 +1,119 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+# Some typos added
+- intent: question_if_restaurant_open
+  examples: |
+    - is this restaurant open on [monday](day) at [21](hour)?
+    - open on [wednesday](day) at [19](hour)?
+    - can I order on [friday](day) at [15](hour)?
+    - can I orger on [thursday](day) at [12](hour)
+
+- intent: list_menu_items
+  examples: |
+    - Could you send me a menu?
+    - Please share menu.
+    - Give me a list of food.
+    - Please sheefd menu.
+
+- intent: order_food
+  examples: |
+    - I want to order [pizza with double becon](full_order).
+    - For me [burger without the tomatoes](full_order).
+    - I want [spaghetti carbonara with jalapeno and pizza without olvies](full_order).
+    - I want [hot-dog with jalapeno and pizza without olvies](full_order).
+    - Give me [hot-dog with extra dip](full_order).
+    - I want [tiramisu](full_order).
+    - I wantt [burger with onion](full_order).
+    - Could you prepare for me [lasagne, burger and pizza with double becon](full_order)?
+    - I want to order [pizza without olvies](full_order).
