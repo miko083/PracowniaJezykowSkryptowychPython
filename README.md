@@ -62,7 +62,7 @@ Your food will be ready to pick-up in 12.0 minutes.
 
 ### Start in shell
 
-Note: in case of problems set proper UID in the `--user` flag (`.sh` scripts).
+Note: in case of problems set proper UID in the `--user` flag (`run_actions.sh` and `run_train.sh` scripts).
 
 To train:
 ```
