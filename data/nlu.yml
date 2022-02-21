@@ -110,7 +110,7 @@ nlu:
   examples: |
     - I want to order [pizza with double becon](full_order).
     - For me [burger without the tomatoes](full_order).
-    - I want [spaghetti carbonara with jalapeno and pizza without olvies](full_order).
+    - I want [spaghetti carbonara with jalapeno and pizza without olives](full_order).
     - I want [hot-dog with jalapeno and pizza without olvies](full_order).
     - Give me [hot-dog with extra dip](full_order).
     - I want [tiramisu](full_order).

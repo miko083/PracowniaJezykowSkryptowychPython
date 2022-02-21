@@ -109,6 +109,7 @@ class ActioOrderFood(Action):
         refused_meals = []
         prepare_times = []
 
+        # Check if food exists.
         for food in full_order:
             temp_food = food.replace("without", "with")
             temp_split = temp_food.split("with")
@@ -121,6 +122,7 @@ class ActioOrderFood(Action):
             else:
                 refused_meals.append(food)
 
+        # Prepare final message.
         if refused_meals:
             message_to_return += "Unfortunately, we don't have everything that you asked for.\n"
 
