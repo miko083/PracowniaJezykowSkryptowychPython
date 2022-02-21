@@ -62,6 +62,11 @@ Your food will be ready to pick-up in 12.0 minutes.
 
 ### Start in shell
 
+To train:
+```
+./run_train.sh
+```
+
 In seperate terminal windows or in background:
 ```
 ./run_actions.sh
